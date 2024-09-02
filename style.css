@@ -65,6 +65,11 @@ section h2 {
 
 section div p{
     padding: 5px;
+    text-align: justify;
+}
+
+#experiencias{
+    text-align: justify;
 }
 
 /* Estilo para links dentro do conteúdo */
