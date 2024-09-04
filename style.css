@@ -25,19 +25,29 @@ body {
 }
 
 /* Estilo para os links de navegação */
-.header nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+.header nav button {
+    color: #fff; /* Cor do texto */
+    background-color: #007bff; /* Cor de fundo inicial */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
     display: inline-block;
-    transition: background-color 0.3s ease;
-    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para fundo e transformação */
+    font-weight: 500; /* Peso da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra que o botão é clicável */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para criar profundidade */
 }
 
-.header nav a:hover {
-    background-color: #555;
-    transition: 0.3;
-    border-radius: 5px;
+/* Efeito ao passar o mouse */
+.header nav button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento no tamanho para dar ênfase */
+}
+
+/* Efeito ao clicar no botão */
+.header nav button:active {
+    background-color: #004080; /* Cor de fundo ao clicar */
+    transform: scale(1); /* Reduz o tamanho ao clicar */
 }
 
 /* Estilo para o conteúdo principal */

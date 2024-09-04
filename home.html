@@ -9,11 +9,12 @@
 <body>
     <header class="header">
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Formação</a>
-            <a href="#">Experiência</a>
-            <a href="#">Habilidades</a>
+            <!--<button onclick="scrollToElement('sobre')">Home</button>-->
+            <button onclick="scrollToElement('sobre')">Sobre</button>
+            <button onclick="scrollToElement('formacao')">Formação</button>
+            <button onclick="scrollToElement('experiencia')">Experiência</button>
+            <button onclick="scrollToElement('habilidades')">Habilidades</button>
+            <button onclick="scrollToElement('mais')">Mais</button>
         </nav>
     </header>
 
@@ -44,18 +45,25 @@
 
         <section id="formacao">
             <h2>Formação</h2>
+            <div>
+                <h3>Técnico em Informática</h3>
+                <p>
+                Instituto Federal de Ciência e Tecnologia Maranhão (2016 - 2018)
+                </p>
+            </div>
+            <div>
+                <h3>Graduação em Ciência da Computação</h3>
             <p>
-                Técnico em Informática - Instituto Federal de Ciência e Tecnologia Maranhão (2016-2018)
+                Universidade Federal do Maranhão(2021 - presente)
             </p>
-            <p>
-                Graduação em Ciência da Computação - Universidade Federal do Maranhão(2021 - presente)
-            </p>
+            </div>
+            
         </section>
 
         <section id="experiencia">
             <h2>Experiências</h2>
             <div id="experiencias">
-                <h3>Projeto de Ensino Tutorial em Computação(PETComp)</h3>
+                <h3>Projeto de Ensino Tutorial em Computação    (PETComp)</h3>
                 <h4>Bolsista - (mar/2022 - nov/2023)</h4>
                 <p>Atribuições aqui!!!!!!!!!</p>
             </div>
@@ -72,8 +80,13 @@
 
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <!-- Conteúdo da seção "Habilidades" -->
+            
+        </section>
+
+        <section id="mais">
+            <h2>Mais</h2>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
