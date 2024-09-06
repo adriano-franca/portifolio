@@ -14,14 +14,35 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    padding-top: 50px;
 }
 
 /* Estilo para o cabeçalho */
 .header {
     background-color: #333;
-    padding: 10px 0;
     text-align: center;
     margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header nav{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
 }
 
 /* Estilo para os links de navegação */
@@ -33,6 +54,7 @@ body {
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para fundo e transformação */
     font-weight: 500; /* Peso da fonte */
+    font-size: medium; /* Tamanho da fonte */
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Mostra que o botão é clicável */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para criar profundidade */
@@ -54,15 +76,14 @@ body {
 main {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para as seções */
 section {
     margin-bottom: 20px;
+    scroll-margin-top: 75px;
 }
 
 section h2 {
