@@ -18,19 +18,22 @@ export function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <motion.div 
+            <motion.a 
               key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }} // Efeito cascata
-              className="bg-gray-950 p-6 rounded-xl border border-gray-800 hover:border-blue-500 transition-colors flex flex-col h-full group"
+              className="bg-gray-950 p-6 rounded-xl border border-gray-800 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-900/20 hover:-translate-y-2 transition-all flex flex-col h-full group cursor-pointer block"
             >
-              <FaFolderOpen className="text-3xl text-blue-500 mb-4 group-hover:-translate-y-1 transition-transform" />
-              <h3 className="text-xl font-bold text-gray-100 mb-2">{project.title}</h3>
+              <FaFolderOpen className="text-3xl text-blue-500 mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-bold text-gray-100 mb-2 group-hover:text-blue-400 transition-colors">{project.title}</h3>
               <span className="text-sm text-blue-400 font-mono mb-4">{project.tech}</span>
               <p className="text-gray-400 flex-grow leading-relaxed">{project.description}</p>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
