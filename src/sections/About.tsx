@@ -14,7 +14,7 @@ export function About() {
       >
         <div>
           <h2 className="text-3xl font-bold mb-6 text-blue-500">Sobre Mim</h2>
-          <p className="text-gray-300 leading-relaxed text-lg">
+          <p className="text-gray-300 leading-relaxed text-justify text-lg">
             {personalInfo.about}
           </p>
         </div>
